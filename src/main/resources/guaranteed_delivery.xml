@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse"
+       name="guaranteed_delivery"
+       transports="http https"
+       startOnLoad="true">
+   <description/>
+   <target>
+      <inSequence>
+         <property name="FORCE_SC_ACCEPTED" value="true" scope="axis2"/>
+         <property name="OUT_ONLY" value="true"/>
+         <store messageStore="Orginal"/>
+         <log level="full"/>
+      </inSequence>
+   </target>
+</proxy>

@@ -1,0 +1,1 @@
+1. This is the sample client which used with https://docs.wso2.com/display/EI611/Sample+907%3A+Inbound+Endpoint+RabbitMQ+Protocol+Sample
